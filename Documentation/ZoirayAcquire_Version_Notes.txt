@@ -1,0 +1,132 @@
+========================================================================
+ZoirayAcquire_v5c
+========================================================================
+- Added Grasshopper 3 Camera support
+- Added post-acquisition ROI (NikonD7000)
+- Added post-acquisition gain (NikonD7000)
+- Moved m-files into folder "matlabFiles"
+- Moved hardware control files to "libraries" folder
+- Created "config" folder (Grasshopper 3)
+- Created "data" folder (Grasshopper 3)
+- Created "tools" folder to house calibration functions (AutoSetLEDDutyCycle)
+- Fixed a set exposure bug
+========================================================================
+ZoirayAcquire_v5b
+========================================================================
+- Added Zoom to NKLiveView (NikonD7000)
+- Added in memory averaging of frames (NikonD7000)
+========================================================================
+ZoirayAcquire_v5
+========================================================================
+- Overhauled Zoiray class
+       - Removed laser variables
+       - Written for instrument modularity
+- GPU fit will no longer output res, dc, and offset variables
+- Added Nikon Camera support
+- Added Arduino support
+
+NEEDED IMPROVEMENTS
+- Add Zoom to NKLiveView
+- Add averaging in memory to NKCapture
+- Errors when LEDs are set to off: NOT FATAL
+========================================================================
+HOTFIX - ZoirayAcquire_v4b
+========================================================================
+- Added CHECK_ifNaNInf.m
+- Changed maximum fit value to 1,000,000nm (1m)
+
+========================================================================
+HOTFIX - ZoirayAcquireLED_v4b
+========================================================================
+- Correction in fitdata. Fit values are not restricted to 0-1000nm. Returned values outside of this range, inf, and NaN are set to -1.
+
+========================================================================
+ZoirayAcquireLED_v4
+========================================================================
+- Interfaced new GPU algorithm to fit button.
+- EXTERNAL FILES: 
+      - Gen_PreBins.m: Generates the bin files for the instrument
+      - Bin files: Used with GPU fitting
+      - Info files: Contains instrument details
+
+========================================================================
+ZoirayAcquireLED_v3b
+========================================================================
+- Fixed connection issues with Rolera
+
+========================================================================
+ZoirayAcquireLED_v3a
+========================================================================
+- Tif will not be saved anymore
+- Default file
+	- Default.txt is the config file
+- Output "Timer started" when an image finishes on super sweep
+- Normalize x-axis of histogram by the max gray level
+
+========================================================================
+ZoirayAcquireLED_v2e
+========================================================================
+- Implemented CAMERA_Rolera.m
+- vid_mod of Rolera or Rolera-XRR now references Rolera
+
+========================================================================
+ZoirayAcquireLED_v2c
+========================================================================
+- Implemented CAMERA_Retiga4000R.m
+- vid_mod of Retiga or Retiga2000R now references Retiga2000R
+- vid_mod of Retiga4000R reference Retiga 4000R
+- CAMERA_Retiga.m renamed to CAMERA_Retiga2000R.m
+- defaults_v2b.txt changed to defaults.txt
+
+========================================================================
+ZoirayAcquireLED_v2b
+========================================================================
+- Log files now saved in logFiles folder
+- Software version now saved: iris_info.version
+- Instrument type implemented into default file (default_v2b.txt)
+- Instrument type saved in datasets: iris_info.instrument
+
+========================================================================
+Turkey - Camera driver code v2
+========================================================================
+- CAMERA_Flea written to control the Point Grey Flea series camera
+- Default path for Zoiray_Algorithm changed to F-drive
+- Fitting re-enabled on ZP
+
+========================================================================
+ZoirayAcquireLED_v2
+========================================================================
+- Disabled Zoiray Logo
+- Implemented saving of log file in the opening_function.
+- Implemented CHECK_ifNormalized to address and fix random normalization event 
+error
+- Save file path initially set to load file's path
+
+========================================================================
+ZoirayAcquireLED_v1
+========================================================================
+- Camera driver implemented in separate m-file. Singe_scan and preview updated.
+- Usable cameras: Q-imaging Retiga, Point Grey Grasshopper, and Allied Vision Technologies Marlin
+
+========================================================================
+Basic Zoiray 2010_07_02 - 2010_11_14
+========================================================================
+- Contains first versions of ZoirayAcquire and ZoirayProcess.
+- Only uses the Retiga camera
+- Default values loaded from default.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

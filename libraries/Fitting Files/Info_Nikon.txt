@@ -1,0 +1,3 @@
+spectrum_size 491
+theta_size 1
+SiCorrection 0.41162     0.37544     0.35608     0.34846

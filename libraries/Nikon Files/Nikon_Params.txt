@@ -1,0 +1,7 @@
+ShootingSpeed 0
+ContinuousShootingNum 100
+CompressionLevel 3
+ShutterSpeed 32
+CompressRAWBitMode 1
+Aperture 17
+Sensitivity 0

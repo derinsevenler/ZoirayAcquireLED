@@ -1,0 +1,7 @@
+Run "Gen_FittingFiles", located in the Generate Bins folder, in Matlab.
+
+Create a "Fitting Files" folder in the same folder as ZoirayAcquireLED.
+
+Copy the files in "Generated Files" to "Fitting Files"
+
+Copy CaFE_single_complex.exe to "Fitting Files"

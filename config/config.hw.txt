@@ -1,0 +1,11 @@
+Note: This file contains hardware defaults for ZoirayAquire
+Type valid field on each line followed by ":", the value, and ";" character.
+Do no use white space between ":" and ";"
+Use brackets for numbered lists and seperate numbers within brackets with white space.
+
+PD_Controller:none;
+LED_Controller:COM10;
+Camera:Grasshopper3;
+ROI:[ 0 0 2048  2048 ];
+Wav_list:[ 455 518 598 635 ];
+Instrument:McGill;

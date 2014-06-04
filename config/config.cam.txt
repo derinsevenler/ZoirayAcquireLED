@@ -1,0 +1,15 @@
+shutter:3
+frames:100
+filename:capture
+fps:80
+wordsize:16
+left:0
+width:2048
+top:0
+height:2048
+sharpness:50
+brightness:50
+gain:1
+bin:1
+extra_info:false
+bitdepth:16
